@@ -1,0 +1,325 @@
+/* цвет основного текста #212121; */
+/* вторичный цвет текста #757575; */
+/* цвет акцент #2196F3; */
+/* начальный цвет фона #FFFFFF; */
+/* вторичный цвет фона #2F303A; */
+
+/* черный цвет для логотипа в недере #000; */
+/* белый цвет для логотипа и ссылок в футере #fff; */
+/* цвет ссылок в футере rgba(255, 255, 255, 0.6); */
+/* начальнай цвет кнопок #F5F4FA; */
+
+
+
+
+:root {
+    --main-text-color: #212121;
+    --second-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-background-color: #ffffff;
+    --second-background-color: #2F303A;
+
+    --text-black: #000;
+    --text-white: #fff;
+    --text-footer-link: rgba(255, 255, 255, 0.6);
+    --primary-button-background: #F5F4FA;
+}
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--main-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    outline: 2px solid tomato;
+}
+
+/* ---------------------Шапка, навигация--------------------- */
+.header-logo,
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+}
+
+.header-logo span {
+    color: var(--text-black);
+}
+
+.header-logo span:hover,
+.header-logo span:focus,
+.footer-logo span:hover,
+.footer-logo span:focus {
+    color: var(--accent-color);
+}
+
+.header-list .header-link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color)
+}
+
+.header-list .current {
+    color: var(--accent-color);
+}
+
+.header-list .header-link:hover,
+.header-list .header-link:focus {
+    color: var(--accent-color)
+}
+
+.list .header-mail,
+.list .header-tel {
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color)
+}
+
+.list .header-mail:hover,
+.list .header-mail:focus,
+.list .header-tel:hover,
+.list .header-tel:focus {
+        color: var(--accent-color)
+}
+
+/* ---------------------Герой--------------------- */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-bottom: 94px;
+    text-align: center;
+    background: var(--second-background-color);
+}
+
+.hero-title {
+    margin-bottom: 30px;
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-white);
+}
+
+/* -----------------Кнопка "Заказать услугу"----------------- */
+.btn {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    background: var(--primary-button-background);
+    color: var(--main-text-color);
+}
+    
+.hero-btn {
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+    color: var(--text-white);
+    background: var(--accent-color);
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background: #188CE8;
+}
+
+/* -----------------Кнопки на странице Портфолио----------------- */
+.portfolio-btn {
+    padding: 6px 22px;
+    min-width: 73px;
+    height: 38px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background: var(--accent-color);
+    color: var(--text-white);
+}
+
+.portfolio-btn-list .current {
+    background: var(--accent-color);
+    color: var(--text-white);
+}
+
+/* ---------------------Особенности--------------------- */
+.features {
+    margin-bottom: 94px;
+}
+
+/* --------Скрываем заголовок-------- */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.features-item-title {
+    min-width: 270px;
+    margin-bottom: 10px;
+    font-size:  inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.features-item-text {
+    min-width: 270px;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--second-text-color);
+}
+
+/* ---------------------Чем мы занимаемся--------------------- */
+.about {
+    margin-bottom: 94px;
+}
+
+.about-title,
+.team-title {
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/* ---------------------Наша команда--------------------- */
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: var(--primary-button-background);
+}
+
+.team-item {
+    background: var(--primary-background-color);
+}
+
+.team-item-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--second-text-color);
+}
+
+/* ---------------------Подвал страницы-------------------- */
+.footer-logo {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.footer-logo span {
+    color:var(--text-white);
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--second-background-color);
+}
+
+.footer-address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-adress-link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--text-white);
+}
+
+.footer-mail,
+.footer-tel {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--text-footer-link);
+}
+
+.footer-adress-link:hover,
+.footer-adress-link:focus,
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+    color: var(--text-white);
+}
+
+
+
+/* --------------------Страница Портфолио--------------------- */
+.portfolio-projects-item {
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-projects-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
+}
+
+.portfolio-projects-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--second-text-color);
+}
+
