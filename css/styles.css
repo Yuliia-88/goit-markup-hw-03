@@ -62,7 +62,11 @@ h6 {
 
     width: 1200px;
 
-    outline: 2px solid tomato;
+    /*outline: 2px solid tomato;*/
+}
+
+.section {
+
 }
 
 /* ---------------------Шапка, навигация--------------------- */
@@ -73,7 +77,6 @@ h6 {
 .header-menu {
     display: flex;
     align-items: center;
-
 }
 
 .header-nav {
@@ -115,8 +118,6 @@ h6 {
 
 .header-list .header-item:not(:last-child) {
     margin-right: 50px;
-
-    background-color: tomato;
 }
 
 .header-list .header-link {
@@ -154,7 +155,7 @@ h6 {
 .list .header-mail:focus,
 .list .header-tel:hover,
 .list .header-tel:focus {
-        color: var(--accent-color)
+    color: var(--accent-color)
 }
 
 /* ---------------------Герой--------------------- */
@@ -316,6 +317,7 @@ h6 {
 .team-item {
     padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-right: 1px solid var(--primary-background-color);
     border-bottom: 1px solid var(--primary-background-color);
     border-left: 1px solid var(--primary-background-color);
@@ -389,6 +391,9 @@ h6 {
 
 
 /* --------------------Страница Портфолио--------------------- */
+.portfolio {
+    margin-top: 94px;
+}
 
 .portfolio-projects-item {
     border: 1px solid #EEEEEE;
@@ -397,6 +402,7 @@ h6 {
 .portfolio-btn-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .portfolio-btn-item:not(:last-child) {
@@ -406,13 +412,30 @@ h6 {
 .portfolio-projects-list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 94px;
 }
 
 .portfolio-projects-item {
+    padding-bottom: 20px;
+
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
 }
+
+.portfolio-projects-link img {
+    display: block;
+}
+
+/* ----- Почему не работает эта часть?--------
+.portfolio-projects-item {
+    width: calc((100%-60px)/3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    background-color: red;
+}
+*/
 
 .portfolio-projects-item:nth-child(3n) {
     margin-right: 0;
@@ -422,8 +445,15 @@ h6 {
     margin-bottom: 0;
 }
 
+.portfolio-projects-group {
+    padding-left: 24px;
+    padding-right: 24px;
+}
 
 .portfolio-projects-title {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
