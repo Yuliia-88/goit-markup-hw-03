@@ -165,7 +165,8 @@ h6 {
 }
 
 .hero-title {
-    margin-bottom: 30px;
+    max-width: 696px;
+    margin: 0 auto 30px;
 
     font-weight: 900;
     font-size: 44px;
@@ -190,6 +191,7 @@ h6 {
 }
     
 .hero-btn {
+    display: inline-block;
     padding: 10px 32px;
     min-width: 200px;
     height: 50px;
@@ -311,8 +313,7 @@ h6 {
     justify-content: space-between;
 }
 
-.team-item {
-    padding-bottom: 30px;
+.team-item {    
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-right: 1px solid var(--primary-background-color);
@@ -322,8 +323,12 @@ h6 {
     background: var(--primary-background-color);
 }
 
-.team-item-title {
-    margin-top: 30px;
+.team-group {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-item-title {    
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -412,8 +417,7 @@ h6 {
 }
 
 .portfolio-projects-item {
-    padding-bottom: 20px;
-
+    
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -425,7 +429,8 @@ h6 {
 
 /* ----- Почему не работает эта часть?--------
 .portfolio-projects-item {
-    width: calc((100%-60px)/3);
+    
+    flex-basis: calc((100%-60px)/3);
     margin-right: 30px;
     margin-bottom: 30px;
 
@@ -442,12 +447,10 @@ h6 {
 }
 
 .portfolio-projects-group {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 20px 24px;
 }
 
 .portfolio-projects-title {
-    margin-top: 20px;
     margin-bottom: 4px;
     
     font-size: 18px;
